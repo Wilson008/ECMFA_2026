@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: Helper
-Bundle-SymbolicName: org.bumble.xtext.grammartransformer.helper
-Bundle-Version: 1.0.0.qualifier
-Automatic-Module-Name: org.bumble.xtext.grammartransformer.helper
-Bundle-RequiredExecutionEnvironment: JavaSE-11
-Export-Package: org.bumble.xtext.grammaroptimizer.helper
-Require-Bundle: org.bumble.xtext.grammartransformer.grammarrule;bundle-version="0.1.0"

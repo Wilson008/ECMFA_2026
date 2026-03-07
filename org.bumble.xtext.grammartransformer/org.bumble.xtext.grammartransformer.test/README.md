@@ -1,1 +1,0 @@
-Please import the JARs to your local projects.
