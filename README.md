@@ -1,5 +1,6 @@
 # ECMFA 2026
 This repository is to provide supplemental materials for the paper 17 to the ECMFA 2026 conference.
+In this paper, we propose a LLM-based approach for metamodel-grammar co-evolution, and compare it with a rule-based methods.
 Six case languages are divided into two groups, i.e., the training set, and the test set.
 ## Directory: training_set
 In the training set, the metamodels and grammars of four case languages ​​(BibTeX, EAST-ADL, SML, and Xenia) were used to develop and validate prompting strategies. For each of them, we created a dedicated subdirectory.
@@ -24,3 +25,5 @@ Iterative development of prompts in SML.
 Iterative development of prompts in Xenia.
 ## Directory: test_set
 In the test set, two DSLs (DOT and Xcore) are used to verify the generalization ability of finalized prompts.
+## Directory: longitudinal_study
+We also conducted longitudinal study of the LLM-based co-evolution approach on four versions of QVTo.
