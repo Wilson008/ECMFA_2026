@@ -32,6 +32,7 @@ We also conducted longitudinal study of the LLM-based co-evolution approach on f
 The experiment was executed independently for each DSL. For each DSL, the experiment proceeds in two steps. 
 - In the first step, the generated grammar G1, the manually adapted grammar G1', and Prompt 1 are provided to the LLM for analysis and comparison. 
 - In the second step, the generated grammar G2 and Prompt 2 are provided to the LLM, whose output yields the adapted grammar G2'. 
+
 Taking BibTeX as an example: 
 - in the first step, "MyBibTex_generated_grammar.txt" (as G1) and "MyBibTex_target_grammar.txt" (as G1') are provided together with Prompt 1; 
 - in the second step, "MyBibTex_generated_grammar.txt" is provided again (this time as G2) together with Prompt 2. Note that for these six DSLs, G1 and G2 refer to the same generated grammar file; this is inherited from the experimental setup of prior work and is acknowledged as a threat to external validity in the paper (see Section 5.2).
