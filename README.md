@@ -36,3 +36,5 @@ The experiment was executed independently for each DSL. For each DSL, the experi
 Taking BibTeX as an example: 
 - in the first step, "MyBibTex_generated_grammar.txt" (as G1) and "MyBibTex_target_grammar.txt" (as G1') are provided together with Prompt 1; 
 - in the second step, "MyBibTex_generated_grammar.txt" is provided again (this time as G2) together with Prompt 2. Note that for these six DSLs, G1 and G2 refer to the same generated grammar file; this is inherited from the experimental setup of prior work and is acknowledged as a threat to external validity in the paper (see Section 5.2).
+
+I put the contents of gramamr and instances in .txt files to account for the possibility that readers may not have Xtext installed. Once a .txt file name contains "target", indicating that it is G1', meaning the grammar adapted from G1 (G1 is the grammar generated from the metamodel before the evolution).
