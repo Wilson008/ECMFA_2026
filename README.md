@@ -1,5 +1,5 @@
 # ECMFA 2026
-This repository is to provide supplemental materials for the paper 17 to the ECMFA 2026 conference.
+This repository is to provide supplemental materials for the paper 17 ("Leveraging LLMs for Grammar Adaptation: A Study on Metamodel-Grammar Co-Evolution") to the ECMFA 2026 conference.
 In this paper, we propose a LLM-based approach for metamodel-grammar co-evolution, and compare it with a rule-based methods.
 Six case languages are divided into two groups, i.e., the training set, and the test set.
 ## 1 Directory: training_set
@@ -25,6 +25,10 @@ Iterative development of prompts in SML.
 Iterative development of prompts in Xenia.
 ## 2 Directory: test_set
 In the test set, two DSLs (DOT and Xcore) are used to verify the generalization ability of finalized prompts.
+### 2.1 Dot
+The LLM-based co-evolution test on the case language Dot.
+### 2.2 Xcore
+The LLM-based co-evolution test on the case language Xcore.
 ## 3 Directory: longitudinal_study
 We also conducted longitudinal study of the LLM-based co-evolution approach on four versions of QVTo.
 
@@ -36,5 +40,9 @@ The experiment was executed independently for each DSL. For each DSL, the experi
 Taking BibTeX as an example: 
 - in the first step, "MyBibTex_generated_grammar.txt" (as G1) and "MyBibTex_target_grammar.txt" (as G1') are provided together with Prompt 1; 
 - in the second step, "MyBibTex_generated_grammar.txt" is provided again (this time as G2) together with Prompt 2. Note that for these six DSLs, G1 and G2 refer to the same generated grammar file; this is inherited from the experimental setup of prior work and is acknowledged as a threat to external validity in the paper (see Section 5.2).
+
+Finalized Prompts:
+- Prompt 1: The attachment contains two Xtext grammars for the same language: the grammar generated from the metamodel and the target grammar. Please identify the adaptations required to transform the generated grammar into the target grammar.
+- Prompt 2: Now, I’m sending you the grammar generated from the evolved metamodel. Please adapt it using the adaptations you learned previously and output the adapted grammar to me.
 
 I put the contents of gramamr and instances in .txt files to account for the possibility that readers may not have Xtext installed. Once a .txt file name contains "target", indicating that it is G1', meaning the grammar adapted from G1 (G1 is the grammar generated from the metamodel before the evolution).
