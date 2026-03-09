@@ -33,6 +33,8 @@ The LLM-based co-evolution test on the case language Xcore.
 We also conducted longitudinal study of the Claude-based co-evolution approach on four versions of QVTo.
 
 ## 4 Experiment Execution Method
+All experiments were executed manually through the web-based interfaces of the respective LLMs (Claude Sonnet 4.5, ChatGPT 5.1, and Gemini 3), with no additional automation.
+
 The experiment was executed independently for each DSL. For each DSL, the experiment proceeds in two steps. 
 - In the first step, the generated grammar G1, the manually adapted grammar G1', and Prompt 1 are provided to the LLM for analysis and comparison. 
 - In the second step, the generated grammar G2 and Prompt 2 are provided to the LLM, whose output yields the adapted grammar G2'. 
